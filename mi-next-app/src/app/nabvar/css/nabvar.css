@@ -1,0 +1,144 @@
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* TITULO (ANTES LOGO) */
+.title {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', 'Inter', sans-serif;
+
+    background: linear-gradient(135deg, #8b5cf6, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 0 4px 20px rgba(139, 92, 246, 0.25);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.title:hover {
+    transform: scale(1.03);
+    filter: brightness(1.2);
+}
+
+/* CONTENEDOR DE BOTONES */
+.navButtons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* BOTONES GENERALES */
+.navButtons button {
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border: none;
+}
+
+/* LOGIN BUTTON (GLASS) */
+.btnLogin {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #ccc;
+}
+
+.btnLogin:hover {
+    background: rgba(255,255,255,0.1);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* DASHBOARD BUTTON */
+.btnDashboard {
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    color: white;
+}
+
+.btnDashboard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 87, 152, 0.4);
+}
+
+/* MENTOR BUTTON */
+.btnMentor {
+    background: linear-gradient(135deg, #f77f00, #fcbf49);
+    color: white;
+}
+
+.btnMentor:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(247, 127, 0, 0.4);
+}
+
+/* REGISTER BUTTON (GRADIENT) */
+.btnRegister {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    color: white;
+}
+
+.btnRegister:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 30px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .navButtons {
+        gap: 12px;
+    }
+
+    .navButtons button {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px 15px;
+    }
+
+    .title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .navButtons {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navButtons button {
+        flex: 1;
+        padding: 10px;
+        font-size: 12px;
+    }
+}

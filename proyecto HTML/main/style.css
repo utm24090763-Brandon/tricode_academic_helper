@@ -1,0 +1,168 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* FONDO */
+body{
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    color:white;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+/* LOGO */
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#00c6ff;
+}
+
+/* BOTONES LINKS */
+.nav-buttons a,
+.btn-main{
+    display:inline-block;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+/* LOGIN */
+.btn-login{
+    background:transparent;
+    border:1px solid #00c6ff;
+    color:#00c6ff;
+}
+
+/* REGISTER */
+.btn-register{
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color:white;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn-main{
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color:white;
+}
+
+/* HOVER */
+.nav-buttons a:hover,
+.btn-main:hover{
+    transform: scale(1.05);
+    opacity:0.9;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px;
+    gap:60px;
+    min-height:100vh;
+}
+
+/* TEXTO */
+.hero-text{
+    max-width:600px;
+}
+
+.hero-text h1{
+    font-size:64px;
+    margin-bottom:25px;
+}
+
+.hero-text p{
+    font-size:22px;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+/* IMAGEN */
+.hero-img img{
+    width:550px;
+    border-radius:25px;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* INFO */
+.info{
+    padding:100px 60px;
+    background: linear-gradient(135deg, #0f2027, #000000);
+    text-align:center;
+}
+
+/* TITULO */
+.info h2{
+    font-size:42px;
+    margin-bottom:30px;
+    color:#00c6ff;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+/* CARD */
+.card{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding:30px;
+    border-radius:20px;
+    width:250px;
+    transition:0.3s;
+    border:1px solid rgba(0,198,255,0.2);
+}
+
+/* HOVER CARD */
+.card:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 20px rgba(0,198,255,0.6);
+}
+
+/* ICONO */
+.card span{
+    font-size:40px;
+    display:block;
+    margin-bottom:15px;
+}
+
+/* TEXTO */
+.card p{
+    font-size:16px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-img img{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:40px;
+    }
+}
