@@ -1,0 +1,23 @@
+El presente proyecto consiste en el desarrollo de una aplicación digital orientada a brindar apoyo académico dentro de una institución educativa. La plataforma está diseñada para que cualquier estudiante pueda publicar 
+una tarea, duda o “quest”, la cual será atendida por un mentor asignado, quien tendrá la responsabilidad de proporcionar una solución clara y útil.
+
+El objetivo principal de esta aplicación es fomentar la colaboración entre estudiantes y mentores, creando un entorno dinámico donde el conocimiento pueda compartirse de manera accesible, rápida y organizada. 
+De esta forma, se busca mejorar el aprendizaje, reducir las dificultades académicas y fortalecer la comunidad estudiantil.
+
+Como parte de la evolución del proyecto, se planea implementar un sistema de recompensas. Este sistema permitirá que los mentores obtengan puntos por cada tarea completada exitosamente. 
+Dichos puntos podrán ser canjeados por beneficios proporcionados por la institución, incentivando así la participación activa y motivando a más estudiantes a convertirse en mentores.
+
+En cuanto a la arquitectura tecnológica, el frontend de la aplicación ha sido desarrollado utilizando React.js, junto con HTML y CSS, lo que permite una interfaz moderna, interactiva y fácil de usar. 
+Por otro lado, el backend está construido en Rust, utilizando un enfoque basado en API. Esta decisión se tomó para aprovechar el alto rendimiento y la seguridad que ofrece Rust, aunque actualmente se han presentado 
+algunos retos en la integración entre el frontend y el backend debido a la curva de aprendizaje del lenguaje.
+
+Actualmente, el proyecto cuenta con un video demostrativo que muestra cómo funcionaría la aplicación una vez que el frontend esté completamente conectado con el backend y la base de datos, simulando así la 
+experiencia final del usuario.
+VIDEO:https://www.youtube.com/watch?v=yrTRp84eCEQ
+
+Este proyecto ha sido desarrollado por estudiantes de la Universidad Metropolitana de Aguascalientes, del primer semestre, grupo B.
+
+Integrantes del equipo:
+
+Brandon Uriel Pérez Padilla – Líder del proyecto
+Nataly Guadalupe Medina Hernández – Desarrolladora Frontend
